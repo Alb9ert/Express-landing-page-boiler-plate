@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--secondary-color);
+    scroll-behavior: smooth;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: CynthoNextSemiBold;
+    src: url("../fonts/cynthoNext/CynthoNextBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CynthoNextBold;
+    src: url("../fonts/cynthoNext/CynthoNextExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CynthoNextRegular;
+    src: url("../fonts/cynthoNext/CynthoNextRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MohrRoundedSemiBold;
+    src: url("../fonts/mohrRounded/MohrRoundedAlt-SemiBold.ttf") format("opentype");
+}
+
+#navBar  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        color-mix(in srgb, var(--primary-color) 40%, black 60%)
+    );    
+    padding-right: 150px;
+    padding-left: 150px;
+    gap: 120px;
+    position: fixed;
+
+
+
+}
+
+.navText {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--text-color);
+    font-family: CynthoNextSemiBold;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.navText:hover {
+    color: var(--text-color-hover);
+    transition: 0.2s ease; 
+
+}
+
+#navWhatWeOffer {
+    margin-left: auto;
+}
+
+#logoText {
+    list-style-type: none;
+    color: white;   
+    font-family: MohrRoundedSemiBold;
+    font-size: 45px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#topContainer {
+    background: linear-gradient(
+        to bottom right,
+        var(--primary-color),
+        color-mix(in srgb, var(--primary-color) 20%, black 80%)
+    );  
+    width: 100%;
+    height: calc(100vh);
+    box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.1); 
+    padding-top: 280px;
+    padding-left: 220px;
+    padding-right: 220px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#navLogin {
+    border: 0.1px solid;
+    border-color: rgba(0, 0, 0, 0.545);
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#navLogin:hover {
+    filter: brightness(0.70); 
+    transition: 0.2s ease; 
+    color: (--text-color-hover);
+}
+
+#topDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftDiv {
+    width: 65%;
+    height: 40vh;
+    margin-top: 40px;
+}
+
+#rightDiv {
+    width: 50%;
+    height: 50vh;
+}
+
+#bottomDiv {
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.bigHeader {
+    font-family: CynthoNextSemiBold;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+.landingText {
+    color: var(--text-color);
+    font-family: CynthoNextRegular;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.tryNowBtn {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 28px;
+    list-style: none;;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 45px;
+    font-family: CynthoNextSemiBold;
+    color: var(--text-color);
+    border: 0.1px solid;
+    border-color: rgba(0, 0, 0, 0.545);
+    cursor: pointer;
+}
+
+.tryNowBtn:hover {
+    filter: brightness(0.70); 
+    transition: 0.2s ease; 
+    color: (--text-color-hover);
+}
+
+#homeImage {
+    width: 400px;
+    margin-left: 210px; 
+}
+
+.bottomLogos {
+    width: 105px;
+}
+
+.bottomLogoText {
+    color: var(--text-color);
+    font-family: CynthoNextRegular;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#secondContainer {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(
+        to bottom right,
+        var(--primary-color),
+        color-mix(in srgb, var(--primary-color) 20%, black 80%)
+    );      
+    margin-top: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 60px;
+    padding-left: 180px;
+    padding-right: 180px;
+
+}
+
+#whatWeOffer {
+    text-align: center;
+    font-family: CynthoNextBold;
+    font-size: 25px;
+    color: var(--text-color);    
+}
+
+.offerDivs {
+    width: 500px;
+    height: 250px;
+    background-color: green;
+    border-radius: 20px;
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary-color),
+        color-mix(in srgb, var(--primary-color) 40%, black 60%)
+    ); 
+    border: 0.1px solid;
+    border-color: var(--accent-color);
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.offerHeader {
+    font-family: CynthoNextSemiBold;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.offerPoint {
+    color: var(--text-color);
+    line-height: 2;
+    margin-left: 50px;
+    font-size: 20px;
+
+}
